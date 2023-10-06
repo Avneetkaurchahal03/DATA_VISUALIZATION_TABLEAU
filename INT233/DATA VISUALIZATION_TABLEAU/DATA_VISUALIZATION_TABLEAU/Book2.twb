@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0611.2007                               -->
+<workbook original-version='18.1' source-build='2023.2.0 (20232.23.0611.2007)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='WDIData' inline='true' name='federated.1q0iyyb0lo82hk1h5mghs0l3v7ht' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='WDIData' name='textscan.0kwq3rq0lxbdav1gtg7ap04xw2nb'>
+            <connection class='textscan' directory='C:/Users/Kamaljeet Singh/Desktop' filename='WDIData.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0kwq3rq0lxbdav1gtg7ap04xw2nb' name='WDISeries.csv' table='[WDISeries#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Series Code' ordinal='0' />
+            <column datatype='string' name='Topic' ordinal='1' />
+            <column datatype='string' name='Indicator Name' ordinal='2' />
+            <column datatype='string' name='Short definition' ordinal='3' />
+            <column datatype='string' name='Long definition' ordinal='4' />
+            <column datatype='string' name='Unit of measure' ordinal='5' />
+            <column datatype='string' name='Periodicity' ordinal='6' />
+            <column datatype='integer' name='Base Period' ordinal='7' />
+            <column datatype='string' name='Other notes' ordinal='8' />
+            <column datatype='string' name='Aggregation method' ordinal='9' />
+            <column datatype='string' name='Limitations and exceptions' ordinal='10' />
+            <column datatype='string' name='Notes from original source' ordinal='11' />
+            <column datatype='string' name='General comments' ordinal='12' />
+            <column datatype='string' name='Source' ordinal='13' />
+            <column datatype='string' name='Statistical concept and methodology' ordinal='14' />
+            <column datatype='string' name='Development relevance' ordinal='15' />
+            <column datatype='string' name='Related source links' ordinal='16' />
+            <column datatype='string' name='Other web links' ordinal='17' />
+            <column datatype='string' name='Related indicators' ordinal='18' />
+            <column datatype='string' name='License Type' ordinal='19' />
+            <column datatype='string' name='F21' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0kwq3rq0lxbdav1gtg7ap04xw2nb' name='WDISeries.csv' table='[WDISeries#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Series Code' ordinal='0' />
+            <column datatype='string' name='Topic' ordinal='1' />
+            <column datatype='string' name='Indicator Name' ordinal='2' />
+            <column datatype='string' name='Short definition' ordinal='3' />
+            <column datatype='string' name='Long definition' ordinal='4' />
+            <column datatype='string' name='Unit of measure' ordinal='5' />
+            <column datatype='string' name='Periodicity' ordinal='6' />
+            <column datatype='integer' name='Base Period' ordinal='7' />
+            <column datatype='string' name='Other notes' ordinal='8' />
+            <column datatype='string' name='Aggregation method' ordinal='9' />
+            <column datatype='string' name='Limitations and exceptions' ordinal='10' />
+            <column datatype='string' name='Notes from original source' ordinal='11' />
+            <column datatype='string' name='General comments' ordinal='12' />
+            <column datatype='string' name='Source' ordinal='13' />
+            <column datatype='string' name='Statistical concept and methodology' ordinal='14' />
+            <column datatype='string' name='Development relevance' ordinal='15' />
+            <column datatype='string' name='Related source links' ordinal='16' />
+            <column datatype='string' name='Other web links' ordinal='17' />
+            <column datatype='string' name='Related indicators' ordinal='18' />
+            <column datatype='string' name='License Type' ordinal='19' />
+            <column datatype='string' name='F21' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Series Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Series Code]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>Series Code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Topic</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Topic]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>Topic</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Indicator Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Indicator Name]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>Indicator Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Short definition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Short definition]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>Short definition</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Long definition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Long definition]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>Long definition</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unit of measure</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Unit of measure]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>Unit of measure</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Periodicity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Periodicity]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>Periodicity</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Base Period</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Base Period]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>Base Period</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other notes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Other notes]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>Other notes</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aggregation method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Aggregation method]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>Aggregation method</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Limitations and exceptions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Limitations and exceptions]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>Limitations and exceptions</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Notes from original source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Notes from original source]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>Notes from original source</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>General comments</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[General comments]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>General comments</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Source]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>Source</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Statistical concept and methodology</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Statistical concept and methodology]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>Statistical concept and methodology</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Development relevance</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Development relevance]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>Development relevance</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Related source links</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Related source links]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>Related source links</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other web links</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Other web links]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>Other web links</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Related indicators</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Related indicators]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>Related indicators</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>License Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[License Type]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>License Type</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F21</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F21]</local-name>
+            <parent-name>[WDISeries.csv]</parent-name>
+            <remote-alias>F21</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='WDISeries.csv' datatype='table' name='[__tableau_internal_object_id__].[WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='WDISeries.csv' id='WDISeries.csv_1B428A62857C41118F7D864D6F4C2F2A'>
+            <properties context=''>
+              <relation connection='textscan.0kwq3rq0lxbdav1gtg7ap04xw2nb' name='WDISeries.csv' table='[WDISeries#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Series Code' ordinal='0' />
+                  <column datatype='string' name='Topic' ordinal='1' />
+                  <column datatype='string' name='Indicator Name' ordinal='2' />
+                  <column datatype='string' name='Short definition' ordinal='3' />
+                  <column datatype='string' name='Long definition' ordinal='4' />
+                  <column datatype='string' name='Unit of measure' ordinal='5' />
+                  <column datatype='string' name='Periodicity' ordinal='6' />
+                  <column datatype='integer' name='Base Period' ordinal='7' />
+                  <column datatype='string' name='Other notes' ordinal='8' />
+                  <column datatype='string' name='Aggregation method' ordinal='9' />
+                  <column datatype='string' name='Limitations and exceptions' ordinal='10' />
+                  <column datatype='string' name='Notes from original source' ordinal='11' />
+                  <column datatype='string' name='General comments' ordinal='12' />
+                  <column datatype='string' name='Source' ordinal='13' />
+                  <column datatype='string' name='Statistical concept and methodology' ordinal='14' />
+                  <column datatype='string' name='Development relevance' ordinal='15' />
+                  <column datatype='string' name='Related source links' ordinal='16' />
+                  <column datatype='string' name='Other web links' ordinal='17' />
+                  <column datatype='string' name='Related indicators' ordinal='18' />
+                  <column datatype='string' name='License Type' ordinal='19' />
+                  <column datatype='string' name='F21' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{27FB86C3-9879-4654-9355-B22A20FC3486}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EECBDA76-9399-41B6-9A83-FE2692F31C9B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
