@@ -1,0 +1,1348 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0611.2007                               -->
+<workbook original-version='18.1' source-build='2023.2.0 (20232.23.0611.2007)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='ICECREAM+ (ICECREAMDATA)' inline='true' name='federated.01xmmwf0wadcjy1e7bzjy01iuqnb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ICECREAMDATA' name='excel-direct.13dugo311l7kqo1g2jw2k1qevoim'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Kamaljeet Singh/Desktop/Avneet M.Sc/Inference project/ICECREAMDATA.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.13dugo311l7kqo1g2jw2k1qevoim' name='ICECREAM' table='[ICECREAM$]' type='table'>
+          <columns gridOrigin='A1:G1001:no:A1:G1001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='ShopID' ordinal='0' />
+            <column datatype='integer' name='icecream_sales' ordinal='1' />
+            <column datatype='integer' name='income' ordinal='2' />
+            <column datatype='real' name='price' ordinal='3' />
+            <column datatype='integer' name='temperature' ordinal='4' />
+            <column datatype='string' name='State' ordinal='5' />
+            <column datatype='string' name='seasons' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.13dugo311l7kqo1g2jw2k1qevoim' name='ICECREAM' table='[ICECREAM$]' type='table'>
+            <columns gridOrigin='A1:G1001:no:A1:G1001:0' header='yes' outcome='6'>
+              <column datatype='integer' name='ShopID' ordinal='0' />
+              <column datatype='integer' name='icecream_sales' ordinal='1' />
+              <column datatype='integer' name='income' ordinal='2' />
+              <column datatype='real' name='price' ordinal='3' />
+              <column datatype='integer' name='temperature' ordinal='4' />
+              <column datatype='string' name='State' ordinal='5' />
+              <column datatype='string' name='seasons' ordinal='6' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.13dugo311l7kqo1g2jw2k1qevoim' name='icecream_flavors' table='[icecream_flavors$]' type='table'>
+            <columns gridOrigin='A1:D209:no:A1:D209:0' header='yes' outcome='2'>
+              <column datatype='integer' name='week' ordinal='0' />
+              <column datatype='integer' name='units sold' ordinal='1' />
+              <column datatype='string' name='flavor' ordinal='2' />
+              <column datatype='string' name='State' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.13dugo311l7kqo1g2jw2k1qevoim' name='weekwise_sales' table='[weekwise_sales$]' type='table'>
+            <columns gridOrigin='A1:E366:no:A1:E366:0' header='yes' outcome='2'>
+              <column datatype='date' date-parse-format='MM/dd/yyyy' name='date' ordinal='0' />
+              <column datatype='real' name='sales' ordinal='1' />
+              <column datatype='string' name='days' ordinal='2' />
+              <column datatype='string' name='week_end' ordinal='3' />
+              <column datatype='string' name='State' ordinal='4' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[ShopID]' value='[ICECREAM].[ShopID]' />
+          <map key='[State (icecream!flavors)]' value='[icecream_flavors].[State]' />
+          <map key='[State (weekwise!sales)]' value='[weekwise_sales].[State]' />
+          <map key='[State]' value='[ICECREAM].[State]' />
+          <map key='[date]' value='[weekwise_sales].[date]' />
+          <map key='[days]' value='[weekwise_sales].[days]' />
+          <map key='[flavor]' value='[icecream_flavors].[flavor]' />
+          <map key='[icecream_sales]' value='[ICECREAM].[icecream_sales]' />
+          <map key='[income]' value='[ICECREAM].[income]' />
+          <map key='[price]' value='[ICECREAM].[price]' />
+          <map key='[sales]' value='[weekwise_sales].[sales]' />
+          <map key='[seasons]' value='[ICECREAM].[seasons]' />
+          <map key='[temperature]' value='[ICECREAM].[temperature]' />
+          <map key='[units sold]' value='[icecream_flavors].[units sold]' />
+          <map key='[week]' value='[icecream_flavors].[week]' />
+          <map key='[week_end]' value='[weekwise_sales].[week_end]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ICECREAM]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G1001:no:A1:G1001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[icecream_flavors]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D209:no:A1:D209:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[weekwise_sales]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E366:no:A1:E366:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ShopID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ShopID]</local-name>
+            <parent-name>[ICECREAM]</parent-name>
+            <remote-alias>ShopID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ICECREAM_24AE56063B9344B8A4E6D1349728128E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>icecream_sales</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[icecream_sales]</local-name>
+            <parent-name>[ICECREAM]</parent-name>
+            <remote-alias>icecream_sales</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ICECREAM_24AE56063B9344B8A4E6D1349728128E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[income]</local-name>
+            <parent-name>[ICECREAM]</parent-name>
+            <remote-alias>income</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ICECREAM_24AE56063B9344B8A4E6D1349728128E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[ICECREAM]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ICECREAM_24AE56063B9344B8A4E6D1349728128E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temperature</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[temperature]</local-name>
+            <parent-name>[ICECREAM]</parent-name>
+            <remote-alias>temperature</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ICECREAM_24AE56063B9344B8A4E6D1349728128E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[ICECREAM]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ICECREAM_24AE56063B9344B8A4E6D1349728128E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>seasons</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[seasons]</local-name>
+            <parent-name>[ICECREAM]</parent-name>
+            <remote-alias>seasons</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ICECREAM_24AE56063B9344B8A4E6D1349728128E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>week</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[week]</local-name>
+            <parent-name>[icecream_flavors]</parent-name>
+            <remote-alias>week</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[icecream!flavors_E927692D69764323933BA9AB96039C7D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>units sold</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[units sold]</local-name>
+            <parent-name>[icecream_flavors]</parent-name>
+            <remote-alias>units sold</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[icecream!flavors_E927692D69764323933BA9AB96039C7D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flavor</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[flavor]</local-name>
+            <parent-name>[icecream_flavors]</parent-name>
+            <remote-alias>flavor</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[icecream!flavors_E927692D69764323933BA9AB96039C7D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State (icecream!flavors)]</local-name>
+            <parent-name>[icecream_flavors]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[icecream!flavors_E927692D69764323933BA9AB96039C7D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[weekwise_sales]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekwise!sales_BAB61A6A9D8243A0B44907347166952E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sales</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sales]</local-name>
+            <parent-name>[weekwise_sales]</parent-name>
+            <remote-alias>sales</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekwise!sales_BAB61A6A9D8243A0B44907347166952E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>days</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[days]</local-name>
+            <parent-name>[weekwise_sales]</parent-name>
+            <remote-alias>days</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekwise!sales_BAB61A6A9D8243A0B44907347166952E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>week_end</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[week_end]</local-name>
+            <parent-name>[weekwise_sales]</parent-name>
+            <remote-alias>week_end</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekwise!sales_BAB61A6A9D8243A0B44907347166952E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State (weekwise!sales)]</local-name>
+            <parent-name>[weekwise_sales]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[weekwise!sales_BAB61A6A9D8243A0B44907347166952E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Month' datatype='integer' name='[Calculation_191684478310330370]' role='measure' type='ordinal'>
+        <calculation class='tableau' formula='month([date])' />
+      </column>
+      <column caption='Shop ID' datatype='integer' name='[ShopID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[State (icecream!flavors)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State (weekwise!sales)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='ICECREAM' datatype='table' name='[__tableau_internal_object_id__].[ICECREAM_24AE56063B9344B8A4E6D1349728128E]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='icecream_flavors' datatype='table' name='[__tableau_internal_object_id__].[icecream!flavors_E927692D69764323933BA9AB96039C7D]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='weekwise_sales' datatype='table' name='[__tableau_internal_object_id__].[weekwise!sales_BAB61A6A9D8243A0B44907347166952E]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Days' datatype='string' name='[days]' role='dimension' type='nominal' />
+      <column caption='Flavor' datatype='string' name='[flavor]' role='dimension' type='nominal' />
+      <column caption='Icecream Sales' datatype='integer' name='[icecream_sales]' role='measure' type='quantitative' />
+      <column caption='Income' datatype='integer' name='[income]' role='measure' type='quantitative' />
+      <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+      <column caption='Sales' datatype='real' name='[sales]' role='measure' type='quantitative' />
+      <column caption='Seasons' datatype='string' name='[seasons]' role='dimension' type='nominal' />
+      <column caption='Temperature' datatype='integer' name='[temperature]' role='measure' type='quantitative' />
+      <column caption='Units Sold' datatype='integer' name='[units sold]' role='measure' type='quantitative' />
+      <column caption='Week' datatype='integer' name='[week]' role='dimension' type='quantitative' />
+      <column caption='Week End' datatype='string' name='[week_end]' role='dimension' type='nominal' />
+      <column-instance column='[price]' derivation='Attribute' name='[attr:price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[units sold]' derivation='Attribute' name='[attr:units sold:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[price]' derivation='Count' name='[cnt:price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[units sold]' derivation='Count' name='[cnt:units sold:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[price]' derivation='CountD' name='[ctd:price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+      <column-instance column='[flavor]' derivation='None' name='[none:flavor:nk]' pivot='key' type='nominal' />
+      <column-instance column='[price]' derivation='None' name='[none:price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[seasons]' derivation='None' name='[none:seasons:nk]' pivot='key' type='nominal' />
+      <column-instance column='[units sold]' derivation='None' name='[none:units sold:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[units sold]' derivation='Sum' name='[sum:units sold:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:flavor:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;chocolate&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;vanilla&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;strawberry&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;lemon&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[attr:price:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[cnt:price:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[ctd:price:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:price:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[sum:price:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.01xmmwf0wadcjy1e7bzjy01iuqnb]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[attr:units sold:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[cnt:units sold:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:units sold:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[sum:units sold:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:seasons:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Winter&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Summer&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Spring&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Autumn&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:State:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;A&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>%all%</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;B&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='week' />
+        <field-sort-custom-order field='Calculation_191684478309130240' />
+        <field-sort-custom-order field='units sold' />
+        <field-sort-custom-order field='flavor' />
+        <field-sort-custom-order field='State (icecream!flavors)' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='ICECREAM' id='ICECREAM_24AE56063B9344B8A4E6D1349728128E'>
+            <properties context=''>
+              <relation connection='excel-direct.13dugo311l7kqo1g2jw2k1qevoim' name='ICECREAM' table='[ICECREAM$]' type='table'>
+                <columns gridOrigin='A1:G1001:no:A1:G1001:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='ShopID' ordinal='0' />
+                  <column datatype='integer' name='icecream_sales' ordinal='1' />
+                  <column datatype='integer' name='income' ordinal='2' />
+                  <column datatype='real' name='price' ordinal='3' />
+                  <column datatype='integer' name='temperature' ordinal='4' />
+                  <column datatype='string' name='State' ordinal='5' />
+                  <column datatype='string' name='seasons' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='icecream_flavors' id='icecream!flavors_E927692D69764323933BA9AB96039C7D'>
+            <properties context=''>
+              <relation connection='excel-direct.13dugo311l7kqo1g2jw2k1qevoim' name='icecream_flavors' table='[icecream_flavors$]' type='table'>
+                <columns gridOrigin='A1:D209:no:A1:D209:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='week' ordinal='0' />
+                  <column datatype='integer' name='units sold' ordinal='1' />
+                  <column datatype='string' name='flavor' ordinal='2' />
+                  <column datatype='string' name='State' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='weekwise_sales' id='weekwise!sales_BAB61A6A9D8243A0B44907347166952E'>
+            <properties context=''>
+              <relation connection='excel-direct.13dugo311l7kqo1g2jw2k1qevoim' name='weekwise_sales' table='[weekwise_sales$]' type='table'>
+                <columns gridOrigin='A1:E366:no:A1:E366:0' header='yes' outcome='2'>
+                  <column datatype='date' date-parse-format='MM/dd/yyyy' name='date' ordinal='0' />
+                  <column datatype='real' name='sales' ordinal='1' />
+                  <column datatype='string' name='days' ordinal='2' />
+                  <column datatype='string' name='week_end' ordinal='3' />
+                  <column datatype='string' name='State' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[State]' />
+              <expression op='[State (icecream!flavors)]' />
+            </expression>
+            <first-end-point object-id='ICECREAM_24AE56063B9344B8A4E6D1349728128E' />
+            <second-end-point object-id='icecream!flavors_E927692D69764323933BA9AB96039C7D' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[State]' />
+              <expression op='[State (weekwise!sales)]' />
+            </expression>
+            <first-end-point object-id='ICECREAM_24AE56063B9344B8A4E6D1349728128E' />
+            <second-end-point object-id='weekwise!sales_BAB61A6A9D8243A0B44907347166952E' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Assess the impact of price changes on ice cream sales'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Calibri' fontsize='14'>Price Sensitivity Analysis</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ICECREAM+ (ICECREAMDATA)' name='federated.01xmmwf0wadcjy1e7bzjy01iuqnb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01xmmwf0wadcjy1e7bzjy01iuqnb'>
+            <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+            <column-instance column='[price]' derivation='Sum' name='[sum:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[units sold]' derivation='Sum' name='[sum:units sold:qk]' pivot='key' type='quantitative' />
+            <column caption='Units Sold' datatype='integer' name='[units sold]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <lod column='[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[sum:units sold:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[sum:price:qk]</cols>
+      </table>
+      <simple-id uuid='{5175ED5A-65D0-4698-8714-6224AFF38DA5}' />
+    </worksheet>
+    <worksheet name='Determine which ice cream flavors are most popular and analyze flavor sales trends'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Calibri' fontsize='14'>Flavor Preference Insights</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ICECREAM+ (ICECREAMDATA)' name='federated.01xmmwf0wadcjy1e7bzjy01iuqnb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01xmmwf0wadcjy1e7bzjy01iuqnb'>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Flavor' datatype='string' name='[flavor]' role='dimension' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[flavor]' derivation='None' name='[none:flavor:nk]' pivot='key' type='nominal' />
+            <column-instance column='[units sold]' derivation='Sum' name='[pcto:sum:units sold:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Units Sold' datatype='integer' name='[units sold]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:State:nk]'>
+            <groupfilter function='member' level='[none:State:nk]' member='&quot;A&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:date:qk]' included-values='in-range'>
+            <min>#2019-01-01#</min>
+            <max>#2019-09-23#</max>
+          </filter>
+          <slices>
+            <column>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:State:nk]</column>
+            <column>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:date:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='800' />
+            <format attr='cell-h' value='560' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:flavor:nk]' />
+              <wedge-size column='[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[pcto:sum:units sold:qk]' />
+              <text column='[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[pcto:sum:units sold:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CBEE3CFC-BBC4-4C28-A87A-372C582560B8}' />
+    </worksheet>
+    <worksheet name='Explore the variation in ice cream sales throughout the week'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Calibri' fontsize='14'>Sales by Day of the Week</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ICECREAM+ (ICECREAMDATA)' name='federated.01xmmwf0wadcjy1e7bzjy01iuqnb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01xmmwf0wadcjy1e7bzjy01iuqnb'>
+            <column-instance column='[week]' derivation='None' name='[none:week:qk]' pivot='key' type='quantitative' />
+            <column caption='Sales' datatype='real' name='[sales]' role='measure' type='quantitative' />
+            <column-instance column='[sales]' derivation='Sum' name='[sum:sales:qk]' pivot='key' type='quantitative' />
+            <column caption='Week' datatype='integer' name='[week]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='fill-above' id='refline3' value='#00000000' />
+            <format attr='fill-below' id='refline3' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[sum:sales:qk]</rows>
+        <cols total='true'>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:week:qk]</cols>
+      </table>
+      <simple-id uuid='{1F6C0826-D33C-49CC-94CF-E58685AA3338}' />
+    </worksheet>
+    <worksheet name='Identify seasonal patterns and trends in ice cream sales.'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>Seasonal Sales Trends</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ICECREAM+ (ICECREAMDATA)' name='federated.01xmmwf0wadcjy1e7bzjy01iuqnb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01xmmwf0wadcjy1e7bzjy01iuqnb'>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='Month' name='[mn:date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Quarter' name='[qr:date:ok]' pivot='key' type='ordinal' />
+            <column caption='Sales' datatype='real' name='[sales]' role='measure' type='quantitative' />
+            <column-instance column='[sales]' derivation='Sum' name='[sum:sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:State:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[sum:sales:qk]</rows>
+        <cols>([federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[qr:date:ok] / [federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[mn:date:ok])</cols>
+      </table>
+      <simple-id uuid='{53501026-5A7B-470E-B6EC-E98560E715DF}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Identify seasonal patterns and trends in ice cream sales.'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:State:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='92'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[mn:date:ok]</field>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:Calculation_191684478310330370:qk]</field>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:State:nk]</field>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:date:nk]</field>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:week:qk]</field>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[sum:Calculation_191684478310330370:ok]</field>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{459E8E69-A737-44F6-8948-64AC8489101B}' />
+    </window>
+    <window class='worksheet' name='Determine which ice cream flavors are most popular and analyze flavor sales trends'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:State:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:flavor:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[mn:date:ok]</field>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:State:nk]</field>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:date:qk]</field>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:flavor:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C85D3D35-636E-4F22-87E7-B7D8EA007C90}' />
+    </window>
+    <window class='worksheet' name='Assess the impact of price changes on ice cream sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:State:nk]</field>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:seasons:nk]</field>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:week:qk]</field>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:week_end:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9DEC257B-7244-4265-B70D-FFC9751E7AC5}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Explore the variation in ice cream sales throughout the week'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:State:nk]</field>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:flavor:nk]</field>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:week:ok]</field>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[none:week:qk]</field>
+            <field>[federated.01xmmwf0wadcjy1e7bzjy01iuqnb].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F03C8A6F-8DCA-4E63-BF34-EAEA2B4C4198}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='87' name='Assess the impact of price changes on ice cream sales' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Determine which ice cream flavors are most popular and analyze flavor sales trends' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAU7klEQVR4nO3d+XPU933H8ef32Ev3fWuFJMQhBBhzGAgGuz5je5K42M6kHdvTtDOZNp62
+      ybRNf+h4ppnpH9BOp03TScfND/XEk+BgbJHY2BhswAYLIRCSWIEOhK7VanWuVnt9v/0B8MRG
+      EhJIe+j7fvyo3e/3+9nVvr6f7/fz/RyKaZomQliUmugCCJFIEgBhaRIAYWkSAGFpEgBhaRIA
+      YWkSAGFpEgBhaRIAYWkSAGFpEgBhaRIAYWkSAGFpEgBhaRIAYWkSAGFpEgBhaRIAYWkSAGFp
+      EgBhaRIAYWkSAGFpEgBhaRIAYWkSAGFpEgBhaRIAYWkSAGFpEgBhaRIAYWkSAGFpEgBhaRIA
+      YWkSAGFpEgBhaRIAYWkSAGFpEgBhaRIAYWkSAGFpEgBhaRIAYWkSAGFpEgBhaRIAYWkSAGFp
+      EgBhaRIAYWkSAGFpeqILIJKDYZoEIxHGgjP4gzMEwmFmoxHCsRiRWAz/SIjQuEmGy4HTruGw
+      6xTnplOQk0ZRTjouhy3RH+GeSAAsyDRNZiIR+ifH6fKP0jcxzkhgmmAkQtQwMEzzjm1G+8KM
+      dEfu+Luuqdh0lfysNMoLMtm4ppD6qgKqS3Ox27R4fJz7opjmHJ9WrCjDMDh+/DjV1dWUlpZy
+      9OhRdF3n6aefxm634/F4aGpqor6+nqysLD777DPq6upwOp10d3fz7LPP0trayubNm1EUZVHH
+      NE0Tb2CaS0ODXB0dYXBqktlodNFlni8Ac1EVhYw0OxvcBezZVMGD60rJyXAu+ljxJDVAAszM
+      zKBpGj6fj1AoRFlZGdPT0wwPD1NZWUlTUxPPPfcchw8fxmaz8dxzz/H222+Tl5eH0+nk1KlT
+      hMNhIpEIdrt93uOYpsn4bJBO3wjNA/30TY4TicVW/PMZpslkIMTZ9n7OtveT6bKzpbaYh7e6
+      aaguIjPNseJlWCypARKkq6sLn8+H2+3m3XffBeDgwYPk5ubywQcfMDg4SE5ODtnZ2fT29pKW
+      lkZhYSEdHR04HA4qKysxDIMnnnjijn2bpsnw9BSneru5NDRIMLq4M/dCllIDLKQwJ41nd9fx
+      +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
+      vrb2Pvd0q+kzJR98Kdi2/SnOJ3+KssBU5/e0Z+kKkRqMQIDR//wZwS+a7ml7xR4me8uV1Jvq
+      XNWx7/wL7A/9YFnP/LdJAFKIEQox9sb/Evj4BCzx3+YsH8JV4V2hkq0QRyaOfT/Gtvngoge4
+      LJUEIMWYhsH0hx8y/uavMBe77rAWI6vBg+ZMndYfNa8W5xP/jFq6ddlueOciAUhR4Z4eRv/r
+      50S6e+76XnuBn/TaGytfqGWhoG98DueBn6C4clb+aBKA1GUEg0wcepvp99/HDM0zoEYxyNzY
+      hZ6Z/DM+KK5cHAf+AX39Myjqze4gPT09nD17lo0bN9LQ0EBfXx8jIyNs374dwzA4ffo0w8PD
+      PProo3g8Hvr6+nj00Ufp6OggPz+fsrIygsEgJSUlcx9TApD6QlevMfGrt5htbb3j3kDPmiJj
+      Q3dyt/5oNmwNB7E/9APU9K+uojMxMYHD4eCtt97ipZde4tChQ7hcLp5//nkMw2BiYoLp6Wku
+      XbrEnj17iMViHD9+HJfLRTgcJi0tjc2bN1NWVjbnpZQEYJUwo1ECp04z+dvDRIeGbgXBJL2u
+      F3uyzvig6mjlO3DsfQ2tbO6u4IFAgN/85jekp6eTkZFBbm4uHo+H733ve2iahsfj4ejRozz9
+      9NPY7XaOHDnCI488QlNTE7OzsyiKQnp6Ok899RRFRUV37F8CsMoY4TAzp88weeRdDH83WZs8
+      KFqSTXar2tDcu2/246/cueBAlq6uLjIzM3nvvffYvHkzXq+XlpYWXnvtNTRNo6+vD7vdzrlz
+      59iyZQtZWVkcP36c7373u7z//vsYhoHdbmfTpk2Uld25VJIEYJUywmHCl08Qa/s5xogHzCTo
+      /WlPR3fvxb791XnP+F83PDzMxYsXqa+vp7y8nFgsxujoKDbbzWcCfX19+P1+du/eTVdXF4OD
+      g+zduxdVVQkEAthsNjweD9u2bftyHPYfkgCscqZpYvg8RK9+SORKI+ZYLxDHf7mqoxU3oG/4
+      JnrtY6iZc9+MJooEwEJM08DwthPt+ZTYjXPE+psgtvzPBhRXHlrFDrSKHehV+1Bz51+mNNEk
+      ABZmGjFi/U3EhloxfFcwJwcxxq9jzixyvICioWSVomaWouauQS3aiFa6FbWgbsWe3C43CYD4
+      kmkaYBqYoSnMgA9iYczwNGZoCiKzN2dcc2aj2Fwo9gyU9ELQHaCoK/q0diVJAISlpUY9JcQK
+      kQAIS5MACEuTAAhLkwAIS5MACEuTAAhLkwAIS5MACEuTAAhLkwAIS5MACEuTAAhLkwAIS5MA
+      CEuTAAhLkwAIS5MACEuTAAhLkwAIS5MACEuTAAhLkwAIS5MACEuTAAhLkwAIS5MACEuTAAhL
+      kwAIS5MACEuTAAhLkwAIS5MACEuTAAhLkwAIS5MACEuTAAhLkwAIS5MACEuTAAhLkwAIS5MA
+      CEuTAAhLkwAIS5MACEv7f9AyeObV10u/AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Explore the variation in ice cream sales throughout the week' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Identify seasonal patterns and trends in ice cream sales.' width='192'>
+      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
+      B3Z8V/r6AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
